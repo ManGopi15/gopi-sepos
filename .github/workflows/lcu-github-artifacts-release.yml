@@ -12,7 +12,7 @@ env:
   NPMRegistry: https://registry.npmjs.org/
   InstallCommand: ./install
   BuildCommand: /install
-  Output: ./build
+  Output: ./buils
 
 jobs:
   build:
