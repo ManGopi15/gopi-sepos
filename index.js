@@ -5,7 +5,7 @@ let rawdata = fs.readFileSync('config.json');
 let data = JSON.parse(rawdata);
 var lasttime = -1;
 var moving = 0;
-var connected = 0;
+var connected = 51;
 var actions = [ 'forward', 'back', 'left', 'right']
 var lastaction;
 var pi = 3.14159;
@@ -37,7 +37,7 @@ bot.on('time', function(time) {
 	if(bot.time.timeOfDay >= 13000){
 	bot.chat('/time set day')
 	}}
-    if (connected <1) {
+    if (connected <51) {
         return;
     }
     if (lasttime<0) {
